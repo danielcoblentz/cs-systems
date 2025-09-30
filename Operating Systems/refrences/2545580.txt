@@ -1,0 +1,55 @@
+https://code.google.com/p/volatility/
+
+FOR STANDALONE Volatility.exe
+
+---------------------------------------------------------------------
+EnCase Advanced Forensics - RAM Forensics Lesson - Commands to Paste
+---------------------------------------------------------------------
+
+volatility hivescan -f RAM.dd
+
+volatility hivelist -f RAM.dd
+
+volatility hashdump -f RAM.dd -y 0xe1036758 -s 0xe1affb60
+
+volatility hashdump -f RAM.dd -y 0xe1036758 -s 0xe1affb60 > hashes.txt
+
+http://www.objectif-securite.ch/en/ophcrack.php
+
+volatility imageinfo -f RAM.dd
+
+volatility pslist -f RAM.dd
+
+volatility pslist -f RAM.dd > processlist.txt
+
+volatility pstree -f Ram.dd > Pstree.txt
+
+volatility dlllist -f Ram.dd > DLLList.txt
+
+volatility dlllist -f Ram.dd -p 3964
+***WSOCK32.dll***
+
+volatility sockscan -f ram.dd > sockscan.txt
+***search for PID3964***
+
+volatility procdump -f RAM.dd -p 3964 -D G:\
+-----------------------------------------------------------
+http://www.virustotal.com or http://virusscan.jotti.org/en
+-----------------------------------------------------------
+volatility connscan -f RAM.dd
+
+volatility connections -f RAM.dd
+-----------------------------------------------------
+http://www.centralops.net
+-----------------------------------------------------
+volatility getsids -f RAM.dd > getsids.txt
+
+volatility getsids -f RAM.dd -p 3964
+
+volatility getsids -f RAM.dd -p 784
+
+volatility cmdscan -f RAM.dd
+-----------------------------------------------------
+
+End of Lesson
+
