@@ -1,0 +1,28 @@
+# Ignore OS files
+Thumbs.db
+.DS_Store
+
+# Ignore temporary Office files
+~$*
+
+# Ignore common editor folders
+.vscode/
+.idea/
+
+# Ignore compiled/output files
+*.class
+*.exe
+*.out
+*.o
+
+# Ignore Python virtual envs
+venv/
+__pycache__/
+
+# Ignore RARS and simulator output
+*.log
+*.pyc
+
+# Ignore images or large generated files if desired
+# *.png
+# *.jpg

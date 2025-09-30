@@ -1,0 +1,3 @@
+There are two files attached.  The RARS program file (rars1_6.jar) and an optional icon file (risc_v_logo_X6Q_icon.ico).  We will work with the RARS program in class, from downloading, creating proper folders, and initial settings used for programming.  The RARS program is an Executable Java Archive file that is treated as a standalone executable program.  The only requirement for your system is that you have Java installed so that you can run Java applications.  If you need Java, here is a link to the Java site: https://www.java.com/.
+Update 9/17/2024: I added the following link to the video referenced in Assignment 5 to provide an alternate way of accessing the video:
+Creating a Memory Dump with Labeling
