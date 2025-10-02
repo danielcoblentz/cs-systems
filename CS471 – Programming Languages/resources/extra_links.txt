@@ -1,0 +1,36 @@
+http://www.tutorialspoint.com/python/python_classes_objects.htm
+https://python-course.eu/oop/
+https://docs.python.org/2/tutorial/
+
+
+Important Technical Papers in Programming Languages
+
+Hoare, C. A. R., Hints on Programming-Language Design, in Essays in Computing Science, 1973, 30 pages.
+Christopher Strachey, Fundamental Concepts in Programming Languages, Higher-Order and Symbolic Computation, 13, 11-49, 2000
+["Quite possibly the most influential set of lecture notes in the history of computer science. Left and right values, Parametric and Ad-hoc polymorphism were all defined in this paper. Much of the content may already occupy your mind, but the sheer weight of the heady topics assembled in one place is stunning to observe."]
+Jeremy Siek, Crash Course on Notation in Programming Language Theory. This is a blog post. Read this after we complete Chapter 4.
+Bjarne Stroustrup. What is " Object-Oriented Programming"?, in Proceedings of the First European Software Festival, 1988.
+Martin Odersky and Philip Wadler. Pizza into Java: Translating theory into practice, in Proc. 24th ACM Symposium on Principles of Programming Languages, 1997.
+John Hughes. Why Functional Programming Matters, in Computer Journal, 1990.
+Robert Kowalski. Predicate logic as programming language, in IFIP Congress, 1974.
+Ken Thomson, Reflections on Trusting Trust, in Communication of the ACM, Vol. 27, No. 8, August 1984, pp. 761-763
+Luca Cardelli , Peter Wegner. On understanding types, data abstraction, and polymorphism, in Computing Surveys, Vol 17 n. 4, pp 471-522, December 1985
+Robert Kowalski. Algorithm = Logic + Control, in Communications of ACM, 1977.
+Edsger W. Dijkstra Guarded Commands, Nondeterminacy and Formal Derivation of Programs , in Communications of ACM, 1975
+R. Pereira, et al. Energy Efficiency across Programming Languages, SLE'17, pp.256-267, https://doi.org/10.1145/3136014.3136031
+Luca Cardelli. A semantics of multiple inheritance*, in Information and Computation, 1988.
+Joel Burget.The algebra (and calculus!) of algebraic data types
+William R. Cook. On Understanding Data Abstraction, Revisited.Onward! Essay, 2009.
+Gregor Kiczales, John Lamping, Anurag Mendhekar, Chris Maeda, Cristina Videira Lopes, Jean-Marc Loingtier, and John Irwin. Aspect-Oriented Programming. Proc. European Conference on Object-Oriented Programming, 1997.
+Seminal papers but difficult to understand
+
+Peter J. Landin. The next 700 programming languages , in Communications of the ACM 9(3):157-65, March 1966.
+[ "This seminal paper proposed an ideal language ISWIM, which without being ever implemented influenced the whole later development."]
+C. A. R. HOARE, An Axiomatic Basis for Computer Programming, in Communications of ACM, 1969.
+["This paper introduce Hoare logic, which forms the foundation of program verification."]
+Wirth, N., On the Design of Programming Languages, in Acta Informatica, 1974.
+John Backus. Can Programming Be Liberated from the von Neumann Style? , in 1977 ACM Turing Award Lecture, 29 pages.
+["This paper, which the author presented at the award ceremony was rather shocking at the time because it said, in essence, "we got it wrong." Backus took the opportunity to make a plea for pure functional programming. His arguments were convincing and they helped to set a research agenda which is just now starting to make some waves in the mainstream." ]
+Philip Wadler. The Essence of Functional Programming*, in The Nineteenth Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages, 1992.
+Eugenio Moggi, Computational lambda-calculus and monads,Proceedings of the Fourth Annual Symposium on Logic in computer science, 1989
+Programming Languages

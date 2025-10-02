@@ -1,0 +1,74 @@
+Homework 1: Describing a Simple Language Using BNF 
+*****************************************************************
+*****************************************************************
+Evaluation
+Points: 35 points
+Submission: Please turn in a hard copy and also submit a soft copy to the blackboard. 
+You may work independently or in a group of 2.
+***Do not use any generative AI tools for this assignment*** 
+
+*********************
+Here is an informal description of a simple language. Statements in the language are as follows:
+
+read a;		|	read an integer from the standard input device into the variable a. a can be any lowercase letter.
+write a;	|	Write the value of a to standard output device (whatever it is). a can be any lowercase letter.
+a := b;		|	Assign to the variable a the value of the variable b. a and b can be any letter between a and z.
+a := 58;	|	Assign the value of 58 to the variable a. a can be any letter between a and z. 58 can be any single-digit or multiple-digit integer literals. Integer literals may be positive, negative, or zero.  
+a := a + 1;	|	Add 1 to a. a can be any lowercase letter. 
+a := a - 1;	|	Subtract 1 from a. a can be any lowercase letter.
+if a < 0 goto L;|	If a < 0, transfer control to a statement labeled with L. L can be any letter between A and Z. a can be any lowercase letter.
+if a = 0 goto L;|	If a = 0, transfer control to a statement labeled with L. L can be any letter between A and Z. a can be any lowercase letter.
+if a > 0 goto L;|	If a > 0, transfer control to a statement labeled with L. L can be any letter between A and Z. a can be any lowercase letter.
+goto L;		|	Transfer control to a statement labeled with L. L can be any letter between A and Z.
+halt;		|	Stop execution, the program should always end with a halt
+
+Lowercase letters a-z represent names of integer variables, and uppercase letters A-Z represent names of labels. Each statement may have a label as a prefix, separated from the statement by a colon (:).  A program must have at least one statement other than halt and it must end with halt. halt can only appear at the program end, not in the middle. All statements end with ;.
+
+For example, the following program computes the sum of two positive integers a + b.
+Preconditions: Variables a and b contain positive integers
+Postconditions: Variable a contains the sum of the integers, and the content of variable b is destroyed.
+
+read a;
+read b;
+L: a := a + 1;
+   b := b - 1;
+   if b > 0 goto L;
+write a;
+halt;
+
+Task 1 (5 points): Using the statements of the simple language described above, write a program that computes the sum of two integers a and b, with the following specifications:
+Preconditions: Variables a and b contain any integers (might be positive, negative, or zero).
+Postconditions: Variable x contains the sum of a + b, the contents of a and b are preserved.
+Note: You may use additional variables in your program if necessary. For simplicity, you may use single letters for variables and labels. Use lowercase letters for variables and uppercase letters for labels.  
+
+Task 2 (25 points): Develop a formal definition of the language syntax using BNF notation.  Make sure your grammar covers ALL THE VALID STATEMENTS in this language.
+
+Presentation:
+Two students will be randomly selected to present their homework. 
+
+Good luck!
+
+
+
+Rubrics for Homework 1
+=====================
+Task 1: 5 points
+Correct logic: 3
+Efficiency: 2
+
+Task 2: grammar rules. 30 points
+1. assignment­
+2. control
+3. input
+4. output
+5. goto
+6. halt
+7. integer: Define integers using recursive grammar rules (sign, digits). Do not enumerate all possible integers. ­­'<integer> = -inf| ...| -1 | 0 | 1 |...| +inf', is not accepted. 
+8. var
+9. label
+10.arithmetic expression
+11.boolean expression
+12.multiple statements
+13.semicolon(;)
+
+

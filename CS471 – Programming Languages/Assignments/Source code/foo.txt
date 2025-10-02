@@ -1,0 +1,11 @@
+#!/usr/bin/guile -s
+!#
+
+(define foo 
+(lambda (L) 
+ (car (cdr L))
+))
+
+; apply it
+(display (foo '(s c h e m e)))
+(newline)

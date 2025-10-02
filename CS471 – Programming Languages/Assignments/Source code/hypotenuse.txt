@@ -1,0 +1,13 @@
+#!/usr/bin/guile -s
+!#
+
+(define (hypotenuse s1 s2)
+(sqrt (+ (square s1) (square s2)))
+)
+
+(define (square number)
+(* number number)
+)
+
+(display (hypotenuse 3 4))
+(newline)

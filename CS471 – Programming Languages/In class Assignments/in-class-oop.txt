@@ -1,0 +1,36 @@
+In_class for Object-oriented Programming
+========================================
+***Be concise and to the point***
+
+1. When you define an ADT, what kinds of operations/functions/methods you mostly like to have?
+2. What are the two kinds of abstraction in programming languages?
+3. Which two conditions make data type "abstract"?
+4. Why does the default copy constructor behave incorrectly?
+class Node{
+public:
+   int data;
+   Node* next;
+};
+
+class LinkedList{
+private:
+    Node* headNode;
+public:
+    LinkedList(const LinkedList& other){
+         this->headNode = other.headNode;
+    }
+};
+
+5. What is the purpose of a C++ destructor?
+6. What is a friend function? What is a friend class?
+7. What is an overriding method? What is an overloading method?
+8. Describe a situation where dynamic binding is a great advantage over its absence.
+9. Compare Java inheritance and C++ inheritance.
+10. Describe a situation where an abstract class is preferred over an interface in Java.
+11. Chapter 12, slide 71, Exercise 3.
+12. Chapter 12, slide 72, Exercise 4.
+
+******
+Please submit a soft copy to the Blackboard within 24 hours. 
+You may work in a group of 2. One copy per group. 
+******

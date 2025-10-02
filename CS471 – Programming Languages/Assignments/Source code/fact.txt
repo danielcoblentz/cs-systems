@@ -1,0 +1,10 @@
+#!/usr/bin/guile -s
+!#
+(define (fact n)
+  (if (zero? n) 1
+    (* n (fact (- n 1)))))
+
+;display the result
+
+(display (fact 5))
+(newline)

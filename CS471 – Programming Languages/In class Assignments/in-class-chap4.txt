@@ -1,0 +1,21 @@
+In-class: Implementing a Scanner and Parser for a Simple Language (The textbook one)
+
+***The goal of these activities is to review and refresh your C knowledge and skills. Feel free to fix any errors as necessary. ****
+
+Part 1 (5 points.)
+======
+Task: Copy and organize the source code in Section 4.2 (lex_bookcode.c is provided) and make a running lexer for the given token types described in our book. (Note: The code does not have logic for recognizing keywords)
+
+Part 2 (10 points)
+======
+Task: Copying the source code in Section 4.4(parser_bookcode.c is provided) and ***integrating*** it with the source code from Part 1. 
+
+
+Submission: 
+==========
+Source code of integrated Part 1 and Part 2 and output screenshot of the program, i.e. front.in (front.in is provided). 
+Note: if you can not get part 2 work, please attach the screenshot of part 1. If Part 2 is successfully integrated with Part 1, please attach the screenout of the integrated program.
+
+
+
+
