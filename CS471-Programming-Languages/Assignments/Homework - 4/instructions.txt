@@ -1,0 +1,64 @@
+In-class Exercise 2 (Scheme and Python)
+
+1. (scheme) Just like we can add and subtract numbers, we can add and subtract functions. For example, if we had functions f(x) and g(x), we could create two new functions: f(x)+g(x) and f(x)-g(x). Use scheme to create these two higher-order functions.
+
+2.(Python) Background
+
+Orders are represented as sublists:
+
+| Order Number | Book Title and Author                        | Quantity | Price per Item |
+| ------------ | -------------------------------------------- | -------- | -------------- |
+| 34587        | Learning Python, Mark Lutz                   | 4        | 40.95          |
+| 98762        | Programming Python, Mark Lutz                | 5        | 56.80          |
+| 77226        | Head First Python, Paul Barry                | 3        | 32.95          |
+| 88112        | Automate the Boring Stuff, Al Sweigart       | 2        | 24.99          |
+| 43901        | Python Crash Course, Eric Matthes            | 6        | 38.50          |
+| 55233        | Fluent Python, Luciano Ramalho               | 1        | 64.99          |
+| 66544        | Effective Python, Brett Slatkin              | 3        | 45.00          |
+| 77855        | Python Tricks, Dan Bader                     | 4        | 29.95          |
+| 88966        | Think Python, Allen Downey                   | 2        | 27.95          |
+| 99012        | Python for Data Analysis, Wes McKinney       | 5        | 49.99          |
+| 10123        | Data Science from Scratch, Joel Grus         | 3        | 44.95          |
+| 11234        | Python Programming for Beginners, John Zelle | 2        | 22.50          |
+| 12345        | Black Hat Python, Justin Seitz               | 1        | 39.99          |
+| 13456        | Mastering Python, Rick van Hattem            | 4        | 35.95          |
+| 14567        | Python Cookbook, David Beazley               | 2        | 54.00          |
+
+For your convenience:
+
+orders = [
+    [34587, "Learning Python, Mark Lutz", 4, 40.95],
+    [98762, "Programming Python, Mark Lutz", 5, 56.80],
+    [77226, "Head First Python, Paul Barry", 3, 32.95],
+    [88112, "Automate the Boring Stuff, Al Sweigart", 2, 24.99],
+    [43901, "Python Crash Course, Eric Matthes", 6, 38.50],
+    [55233, "Fluent Python, Luciano Ramalho", 1, 64.99],
+    [66544, "Effective Python, Brett Slatkin", 3, 45.00],
+    [77855, "Python Tricks, Dan Bader", 4, 29.95],
+    [88966, "Think Python, Allen Downey", 2, 27.95],
+    [99012, "Python for Data Analysis, Wes McKinney", 5, 49.99],
+    [10123, "Data Science from Scratch, Joel Grus", 3, 44.95],
+    [11234, "Python Programming for Beginners, John Zelle", 2, 22.50],
+    [12345, "Black Hat Python, Justin Seitz", 1, 39.99],
+    [13456, "Mastering Python, Rick van Hattem", 4, 35.95],
+    [14567, "Python Cookbook, David Beazley", 2, 54.00]
+]
+
+Each order is subject to:
+--Sales tax (e.g., 6.5%)
+--Discount (e.g., 10%) if quantity > 5
+
+Task: Write one or more Python functions to compute the grand total (in dollars) for all orders.
+
+Requirements:
+Do not use loops (for, while) or list comprehension.
+Use function closures to capture tax rate and discount.
+Use at least one higher-order function (map, reduce, or a generator expression).
+Clearly explain:
+--Where and how a function closure is used.
+--Where and how a higher-order function is used. 
+
+
+
+
+
