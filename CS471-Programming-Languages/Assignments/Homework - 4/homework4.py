@@ -1,4 +1,3 @@
-import math
 from functools import reduce
 
 
@@ -27,6 +26,7 @@ def compute_grand_total(orders):
             return subtotal * (1 + tax_rate)
         return calculate_subtotal_with_tax
     
+
     def create_quantity_based_discount_applier(discount_rate, threshold):
         def apply_discount_if_quantity_exceeds_threshold(quantity, subtotal):
             if quantity > threshold:
@@ -60,4 +60,4 @@ def compute_grand_total(orders):
 
 
 grand_total = compute_grand_total(orders)
-print(f"grand total for all orders: ${grand_total:.2f}")
+print(f"grand total for all orders: ${grand_total:.2f}") # not sure how many decimal places needed so i defaulted to 2

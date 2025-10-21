@@ -1,0 +1,25 @@
+(define (add-f f g)
+  (lambda (x)
+    (let ((fx (f x))     
+          (gx (g x)))    
+      (+ fx gx))))        
+
+
+
+(define (sub-f f g)
+  (lambda (x)
+    (let ((fx (f x))       
+          (gx (g x)))      
+      (- fx gx))))         
+
+
+
+(define (square x)
+  (* x x))
+
+(define (double x)
+  (* 2 x))
+
+
+((add-f square double) 3)   
+((sub-f square double) 3)  

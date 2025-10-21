@@ -59,6 +59,3 @@ Clearly explain:
 --Where and how a higher-order function is used. 
 
 
-
-
-
