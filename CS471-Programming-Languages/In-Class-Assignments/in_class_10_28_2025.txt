@@ -1,0 +1,136 @@
+Daniel Coblentz
+10.28.2025
+Programing lang
+
+
+
+In class exercises
+==============
+ 
+1.Suppose we are working with the following knowledge base:
+    wizard(ron).
+    wizard(X) :- hasBroom(X),hasWand(X).
+    hasWand(harry).
+    quidditchPlayer(harry).
+    hasBroom(X) :- quidditchPlayer(X).
+
+How does Prolog respond to the following queries?
+1) wizard(ron).
+2) witch(ron).
+3) wizard(hermione).
+4) witch(hermione).
+5) wizard(harry).
+6) wizard(Y).
+7) witch(Y).
+
+
+
+1) true
+2) procedure `witch(A)' does not exist
+3) false
+4) procedure `witch(A)' does not exist
+5) true
+6) y = ron
+7) procedure `witch(A)' does not exist
+      
+2. Here is a tiny lexicon and mini grammar with only one rule which defines a sentence as consisting of five words: an article, a noun, a verb, and again an article and a noun.
+              word(article,a).
+              word(article,every).
+              word(noun,criminal).
+              word(noun,'big kahuna burger').
+              word(verb,eats).
+              word(verb,likes).
+               sentence(Word1,Word2,Word3,Word4,Word5) :-
+                      word(article,Word1),
+                      word(noun,Word2),
+                      word(verb,Word3),
+                      word(article,Word4),
+                      word(noun,Word5).
+      
+1) What query do you have to pose in order to find out which sentences the grammar can generate?
+
+sentence(Word1, Word2, Word3, Word4, Word5)
+
+2) List the first five sentences that this grammar can generate in the order Prolog will generate them. Make sure that you understand why Prolog generates them in this order.
+
+Word1 = Word4, Word4 = a,
+Word2 = Word5, Word5 = criminal,
+Word3 = eats
+
+
+sentence 2:
+
+Word1 = Word4, Word4 = a,
+Word2 = criminal,
+Word3 = eats,
+Word5 = 'big kahuna burger'
+
+
+sentence 3: 
+Word1 = a,
+Word2 = Word5, Word5 = criminal,
+Word3 = eats,
+Word4 = every
+
+sentence 4:
+Word1 = a,
+Word2 = criminal,
+Word3 = eats,
+Word4 = every,
+Word5 = 'big kahuna burger'
+
+
+sentence 5:
+Word1 = Word4, Word4 = a,
+Word2 = Word5, Word5 = criminal,
+Word3 = likes
+
+
+3. Represent the following in Prolog:
+a) Butch is a killer.
+
+killer(butch).
+
+
+b) Mia and Marsellus are married.
+
+
+c) Zed is dead.
+dead(zed).
+
+d) Marsellus kills everyone who gives Mia a foot massage.
+
+
+e) Mia loves everyone who is a good dancer.
+
+
+f) Jules eats anything that is nutritious or tasty.
+
+4. Murder Mystery
+Four guests (Colonel Mustard, Professor Plum, Miss Scarlett, Ms. Green) attend a dinner party at the home of Mr. Boddy. Suddenly, the lights go out!
+When they come back, Mr. Boddy lies dead in the middle of the table.
+Everyone is a suspect.
+
+Upon further examination, the following facts come to light:
+- Mr. Boddy was having an affair with Ms. Green.
+- Professor Plum is married to Ms. Green.
+- Mr. Boddy was very rich.
+- Colonel Mustard is very greedy.
+- Miss Scarlett was also having an affair with Mr. Boddy.
+
+There are two possible motives for the murder: hatred and greed. Someone hates someone else if that other person is having an affair with his/her spouse. Someone is willing to commit murder if he/she is greedy and not rich, and the victim is rich.
+
+Who are the suspects?
+
+5. This is a classical Prolog application. Given the following graph of possible flights between eight US cities (See the graph attached seperately):
+a) Build a knowledge base using the predicate directFlight/2 which encodes one city has direct flight to another city.
+b) Add to rule that checks if there is a route between two cities. Routes of length zero are allowed. Example queries: 
+route(chicago, chicago). should return yes. 
+route(chicago, la). should return yes. 
+route(la,'San Fracisco'). should return no.
+
+c) Add a rule that checks if a route has two legs.  Example queries:
+route_of_2_legs(chicago, la). should return yes
+route_of_2_legs(chicago, denver). should return no
+
+d) Add cost factor to directFlight, route, and route_of_2_legs so that the knowledge base can tell the cost associated with each flight. For example, route(chicago, X, Y). tells all the cities reachable from Chicago, and the cost(Y)to fly from Chicago to each city(X).
