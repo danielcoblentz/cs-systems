@@ -7,5 +7,8 @@ Key items
 - `LexAndYaccTutorial.pdf` — tutorial slides or notes on lex/yacc.
 - `anatomy.pdf`, `cool_manual.pdf` — additional reading materials.
 - `extra_links.txt` — curated links and seminal papers.
+- `ch12/` — object-oriented examples in Java and C++ (inheritance, polymorphism).
+- `ch15/` — Scheme examples mirrored from `assignments/Source code` for quick access.
+- `parallel/` — OpenMP/MPI demos (`test-openmp*.c`, `test-openmpi*.c`) and Monte Carlo π estimators (`darts-*.c`).
 
 If you need files renamed or moved into subfolders by topic (parsing, type systems, functional programming), tell me which grouping you prefer and I can reorganize them.
