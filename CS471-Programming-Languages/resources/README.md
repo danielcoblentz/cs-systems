@@ -9,6 +9,9 @@ Key items
 - `extra_links.txt` — curated links and seminal papers.
 - `ch12/` — object-oriented examples in Java and C++ (inheritance, polymorphism).
 - `ch15/` — Scheme examples mirrored from `assignments/Source code` for quick access.
-- `parallel/` — OpenMP/MPI demos (`test-openmp*.c`, `test-openmpi*.c`) and Monte Carlo π estimators (`darts-*.c`).
+- `parallel/` — parallel-programming snippets:
+  - `openmp/` — `test-openmp*.c` hello-world and reduction/sections examples.
+  - `mpi/` — `test-openmpi*.c` “hello world” and allreduce samples.
+  - `darts/` — Monte Carlo π estimators in OpenMP and MPI (`darts-*.c`).
 
 If you need files renamed or moved into subfolders by topic (parsing, type systems, functional programming), tell me which grouping you prefer and I can reorganize them.

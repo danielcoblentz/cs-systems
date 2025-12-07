@@ -14,5 +14,5 @@ Quick pointers
 --------------
 - Lex/Yacc demos: `resources/LexAndYaccCode/` (see `build.txt` for commands).
 - Scheme samples: `assignments/Source code/README.md` explains how to run `.scm` files.
-- Parallel programming snippets: see `resources/parallel/` for OpenMP (`test-openmp*.c`) and MPI (`test-openmpi*.c`, `darts-*`) demos.
+- Parallel programming snippets: see `resources/parallel/` for OpenMP (`openmp/`), MPI (`mpi/`), and Monte Carlo darts examples (`darts/`).
 - Chapter 12 OO examples: `resources/ch12` now contains working Java and C++ snippets that compile out of the box.

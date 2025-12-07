@@ -1,48 +1,54 @@
-public class Name {
-    protected String myName;
+/**
+ * Simple inheritance demo kept self-contained to avoid clashing with the
+ * top-level Contact/Person classes elsewhere in this folder.
+ */
+public class Inheritence { // keeping file's original spelling
+    static class Name {
+        protected String myName;
 
-    public Name(){}
-	
-    public Name(String aName){myName = aName;}
+        Name() {}
 
-    public void setName(String name) {
-        myName = name;
+        Name(String aName) {
+            myName = aName;
+        }
+
+        public void setName(String name) {
+            myName = name;
+        }
+
+        public void print() {
+            System.out.println(myName);
+        }
     }
 
-    public void print() {
-        System.out.println(myName);
-    }
-}
+    static class Contact extends Name {
+        private String myAddress;
 
-public class Contact extends Name {
-    private String myAddress;
-   
-    public Contact(){}
-	
-    public Contact(String aName, String aAddress){
-	super(aName);
-	myAddress = aAddress;}
+        Contact() {}
 
+        Contact(String aName, String anAddress) {
+            super(aName);
+            myAddress = anAddress;
+        }
 
-    public void setAddress(String address) {
-        myAddress = address;
-    }
+        public void setAddress(String address) {
+            myAddress = address;
+        }
 
-    @Override
-    public void print() {
-        super.print();
-        System.out.println(myAddress);
+        @Override
+        public void print() {
+            super.print();
+            System.out.println(myAddress);
+        }
     }
 
     public static void main(String[] args) {
-        Name aName = new Contact(); // Polymorphic reference
+        Contact contact = new Contact();
+        Name asName = contact; // polymorphic reference
 
-        aName.setName("John McClane");
+        asName.setName("John McClane");
+        contact.setAddress("137th floor, Nakatomi Plaza");
 
-        aName.setAddress("137th floor, Nakatome Towers");
-
-        aName.print();
+        asName.print(); // prints name then address via override
     }
-} {
-    
 }
