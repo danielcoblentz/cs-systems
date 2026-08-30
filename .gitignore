@@ -1,0 +1,20 @@
+# Operating system and editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Office lock files
+~$*
+
+# Compiled output
+*.o
+*.out
+*.class
+*.exe
+*.dSYM/
+
+# Python
+__pycache__/
+*.pyc
+venv/
