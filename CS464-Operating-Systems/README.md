@@ -1,60 +1,41 @@
-# Operating Systems (Course Materials)
+# CS464 Operating Systems
 
-This folder holds course materials for an Operating Systems course. The structure below is intended to keep slides, assignments, exams, and references organized.
+Spring 2025.
+Processes, memory management, deadlock, file systems, and OS security, with a
+sizeable forensics and CTF component in the second half.
+There is no code of mine in this folder; it is written homework, slides, and
+reading.
 
-Quick index (existing items detected in this folder):
+## Layout
 
-- `assignments/` — assignment and lab subfolders (may contain per-assignment directories).
-- `Exams/` — midterms, finals, practice exams and solutions.
-- `leture slides/` — lecture slide decks (note: folder name has a typo; see "Notes" below).
-- `refrences/` — reference materials and reading lists (note: folder name has a typo; see "Notes").
-- `OS quizes.pdf` — a PDF found in the root of this folder (likely quizzes compilation).
-- `Process (Code).docx` — a document with code or process notes.
-- `syllabus_464_25s(1).docx` — course syllabus document.
+`assignments/`
+One folder per assignment. Numbers 1 through 4 and 7 through 10 are here;
+5 and 6 are not.
+Assignment 4 is three photos rather than a document.
+Two later assignments sit loose at the top of the folder rather than in
+numbered subfolders: `assignment 12 OS.pdf` and `OS chapter 11 HW (1).pdf`.
 
-Suggested folder structure
---------------------------
+`lecture-slides/`
+The publisher decks for Tanenbaum and Bos, Modern Operating Systems, fifth
+edition, `ch-01` through `ch-12`.
+Alongside them are three topic folders the instructor added: memory forensics
+with Volatility under `Chapter 3 Memory Management/`, deadlock notes under
+`Chapter 6 deadlocks/`, and the security material under `chapter 9/`
+(buffer overflows, hardening, Windows CVEs, policy examples, and an intro to
+CTFs).
 
-Keep this top-level layout for clarity:
+`references/`
+Background reading handed out during the semester: Raspberry Pi and ARM
+assembly guides, the Volatility cheat sheets, a wireless decryption walkthrough,
+and the `Feb-20-2023/` folder of files used for the file carving exercise.
+The four Volatility files here are byte-identical copies of the ones under
+`lecture-slides/Chapter 3 Memory Management/`.
 
-- `Lecture Slides/` — slide decks, one file per lecture with leading numbers: `01-intro.pdf`, `02-processes.pdf`.
-- `Assignments/` — create per-assignment folders: `Assignment-01/`, `Assignment-02/` containing problem statements, starter code, and datasets.
-- `Exams/` — organized by semester or year: `2025-Fall/`, `2024-Spring/`.
-- `References/` — papers, book excerpts, and external links used in class.
+`OS quizes.pdf`
+Eight quiz questions from the course, exported from Google Docs.
 
-Naming conventions
-------------------
+`Process (Code).docx`
+Process management notes with code excerpts.
 
-- Use lowercase or Title-Case consistently and avoid spaces when possible. Use hyphens for readability: `assignment-01.pdf` or `Assignment-01/`.
-- Prefix lecture slides and assignments with a two-digit index to preserve order: `01-`, `02-`, etc.
-- Include the year or semester on big artifacts (exams, syllabus) when relevant: `final-2025.pdf`, `syllabus-464-fall-2025.docx`.
-
-Notes & housekeeping
---------------------
-
-- There are a couple of likely typos in folder names: `leture slides/` should be `Lecture Slides/` and `refrences/` should be `References/`. Consider renaming those folders to keep the structure consistent.
-- Small files found in the root (e.g., `OS quizes.pdf`, `Process (Code).docx`, `syllabus_464_25s(1).docx`) should be moved into the appropriate subfolders (`Exams/`, `Assignments/` or `References/`) and renamed to follow the conventions above.
-- If you want, I can rename those folders and move those files into suggested locations; tell me which renames/moves to perform.
-
-How to contribute
------------------
-
-- Add new lecture slides to `Lecture Slides/` and follow the naming convention. If slides contain instructor-only solutions, mark them with `-solutions` in the filename and consider adding access rules (if this repo will be shared).
-- For assignments, create a folder `Assignment-##/` and include `README.md` with submission instructions and grading rubric. Keep student submissions in a separate location (not in this repo) if they contain private data.
-- If you add code, include a `LICENSE` or header indicating allowed reuse.
-
-Contact / maintainer
---------------------
-
-Include instructor or maintainer contact info here (email or GitHub username) so contributors know who to ask about content or permissions.
-
-Last notes
-----------
-
-If you'd like, I can:
-
-- Rename `leture slides/` -> `Lecture Slides/` and `refrences/` -> `References/`.
-- Move `OS quizes.pdf` into `Exams/` and `Process (Code).docx` into `Assignments/` or `Lecture Slides/` depending on your preference.
-- Create template files for assignments, exams, and lecture slide naming.
-
-Tell me which of these you'd like me to do next and I will proceed.
+`syllabus_464_25s(1).docx`
+The syllabus.

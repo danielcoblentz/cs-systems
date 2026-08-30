@@ -1,17 +1,36 @@
-Resources for CS471 (Programming Languages)
+# CS471 resources
 
-This directory contains reference materials, tutorials, and example code used in the course.
+Reference material and example code from the course.
+None of this is my work.
 
-Key items
-- `LexAndYaccCode/` — example lex/yacc files and generated artifacts for small calculators.
-- `LexAndYaccTutorial.pdf` — tutorial slides or notes on lex/yacc.
-- `anatomy.pdf`, `cool_manual.pdf` — additional reading materials.
-- `extra_links.txt` — curated links and seminal papers.
-- `ch12/` — object-oriented examples in Java and C++ (inheritance, polymorphism).
-- `ch15/` — Scheme examples mirrored from `assignments/Source code` for quick access.
-- `parallel/` — parallel-programming snippets:
-  - `openmp/` — `test-openmp*.c` hello-world and reduction/sections examples.
-  - `mpi/` — `test-openmpi*.c` “hello world” and allreduce samples.
-  - `darts/` — Monte Carlo π estimators in OpenMP and MPI (`darts-*.c`).
+`LexAndYaccCode/`
+The lex and yacc calculator examples (`calc1`, `calc2`, `calc3`).
+`build.txt` has the bison and flex commands for each one; `clean.txt` undoes
+them.
+The `.tab.c`, `lex.yy.c`, and `y.tab.c` files are generated output that was
+checked in with the sources.
 
-If you need files renamed or moved into subfolders by topic (parsing, type systems, functional programming), tell me which grouping you prefer and I can reorganize them.
+`ch12/`
+Inheritance and polymorphism examples in Java and C++.
+See `ch12/README.md`.
+
+`ch15/`
+Scheme examples with `.scm` extensions.
+The same programs are in `../Assignments/Source-code/`, mostly as `.txt`.
+
+`darts/` and `openmpi/`
+The parallel programming code as it was handed out in class: a Monte Carlo
+pi estimator in OpenMP and MPI, and small OpenMP and MPI hello-world and
+reduction programs.
+
+`parallel/`
+Shorter rewrites of the same programs, split into `openmp/`, `mpi/`, and
+`darts/`.
+These are not copies of the files above; they are simplified versions written
+later.
+
+`extra/`
+Everything else: the syllabus image and weekly activity chart, the BNF Web
+Club pages, the lex and yacc tutorial, the Cool manual, the anatomy of a
+compiler notes, a guide to running Scheme on the department server, midterm
+study material, and `extra_links.txt`.
