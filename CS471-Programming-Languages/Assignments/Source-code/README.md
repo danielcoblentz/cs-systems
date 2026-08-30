@@ -1,15 +1,18 @@
-# Source code examples (Scheme / Guile)
+# Scheme examples
 
-This folder contains Scheme/Guile example programs used in class. Several files were originally stored with a `.txt` extension; they have been renamed to `.scm` to reflect their language and to make them executable with Guile.
+The Scheme programs used in class, as they were handed out.
 
-How to run (macOS / Linux):
+Most arrived with a `.txt` extension: `cmdline.txt`, `compare.txt`,
+`examples.txt`, `fact_display.txt`, `foo_main.txt`, `length.txt`,
+`quadratic.txt`, and `tail_factorial.txt`.
+Five of them also have a `.scm` copy here so they can be run directly:
+`fact.scm`, `fact_main.scm`, `foo.scm`, `hello.scm`, and `hypotenuse.scm`.
+The `.txt` originals were kept alongside them rather than replaced.
 
-1. Make the script executable: chmod +x <file>.scm
-2. Run directly: ./<file>.scm <args>
-   or: guile <file>.scm <args>
+A full set with `.scm` extensions is in `../../resources/ch15/`.
 
-Files:
-- `hello.scm` — simple Hello World example.
-- `fact.scm`, `fact_main.scm` — factorial function and a main wrapper.
-- `foo.scm` — tiny example function.
-- `hypotenuse.scm` — computes hypotenuse length.
+To run one:
+
+    guile fact_main.scm 5
+
+Files with a shebang line can also be run directly after `chmod +x`.
