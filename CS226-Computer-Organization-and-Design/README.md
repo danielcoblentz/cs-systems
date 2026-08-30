@@ -1,83 +1,46 @@
-# CS226 — Computer Organization & Design
+# CS226 Computer Organization and Design
 
-This folder contains course materials for CS226 (Computer Organization & Design). The structure below keeps lecture slides, homework, exams, tools, and sample code organized.
+Fall 2024. RISC-V assembly, data representation, and the basics of processor
+design.
+My work in this folder is the assembly under `Homework/`; everything else is
+course material I was given.
 
-Contents
---------
+## Layout
 
-- `Lecture Slides/` — lecture slide decks and notes.
-- `Homework/` — per-assignment folders (Homework - 1, Homework - 2, ...).
-- `exam/` — midterms, finals, and practice exams.
-- `sample code/` — example solutions and starter code.
-- `RARS/` — RARS assembler/simulator tools used in class.
-- `CS 226 Fall 2024 Course Syllabus (1).docx` — syllabus document found in this folder.
-- `References/` — course references and syllabus (recommended).
+`Homework/Homework-1` through `Homework/Homework-7`
+Each folder holds the assignment sheet and whatever I turned in for it.
+Homework 4 through 7 include my RISC-V source (`hw4.asm`, `hw5.asm`,
+`hw6.asm`, `hw7.asm`) plus the memory dumps and screenshots the write-ups
+asked for.
+Homework 1 through 3 were written answers only, so there is no code.
 
-Week-by-week outline
----------------------
+`lecture-slides/`
+PDF exports of the course decks, grouped by chapter.
+Chapters 1 through 5 have their own folders; `Computer Performance/` and
+`Data Representation/` cover the two topics that spanned several lectures.
 
-Below is a suggested week-by-week breakdown that maps to content in this folder. Update the links/dates to match the semester's schedule.
+`sample-code/`
+Example programs handed out in class: branching, system calls, integer
+multiply, divide-by-zero handling, floating point, and a find-largest routine
+written in both assembly and Java.
 
-Week 1 — Introduction & Number Systems
-- Slides: `Lecture Slides/Chapter 1/` (or the first slide file)
-- Read: `References/` (see syllabus)
-- Homework: `Homework/Homework - 1/`
+`exam/`
+The final exam topic list, plus the articles on Moore's law and hardware
+trends that the last part of the course was built around.
 
-Week 2 — Computer Arithmetic & Data Representation
-- Slides: `Lecture Slides/Chapter 2/`
-- Homework: `Homework/Homework - 2/`
+`RARS/`
+The RARS 1.6 simulator jar used to assemble and run everything in
+`Homework/`, with a short description of the tool.
+Run it with `java -jar "rars1_6 (1).jar"`.
 
-Week 3 — Instruction Set Architecture
-- Slides: `Lecture Slides/Chapter 3/`
-- Homework: `Homework/Homework - 3/`
+`CS 226 Fall 2024 Course Syllabus (1).docx`
+The syllabus.
 
-Week 4 — Assembly Language & RARS
-- Slides: `Lecture Slides/Chapter 4/`
-- Tool: `RARS/`
-- Homework: `Homework/Homework - 4/`
+## Running the assembly
 
-Week 5 — Processor Datapath & Control
-- Slides: `Lecture Slides/Chapter 5/`
-- Homework: `Homework/Homework - 5/`
+Open a `.asm` file in RARS, assemble, then run.
+To check that a file assembles without opening the GUI:
 
-Week 6 — Memory Hierarchy
-- Slides: `Lecture Slides/Data Representation/` or `Lecture Slides/Computer Performance/`
-- Homework: `Homework/Homework - 6/`
+    java -jar "RARS/rars1_6 (1).jar" a nc "Homework/Homework-6/hw6.asm"
 
-Week 7 — Pipelining
-- Slides: `Lecture Slides/Computer Performance/` (or add pipelining slides here)
-- Sample code: `sample code/`
-
-Week 8 — Midterm / Review
-- Exams: `exam/`
-
-Week 9+ — Advanced topics (caches, virtual memory, I/O, multiprocessors)
-- Slides and further homework in respective folders.
-
-Linking to content
-------------------
-
-Use the links above to jump to the relevant folder. If a slide or homework file is missing, consider adding it with the recommended naming format:
-- Slides: `NN-topic.pdf` (e.g. `01-intro.pdf`)
-- Homework folders: `Homework - N/` with an internal `README.md` describing the assignment and submission instructions.
-
-. gitignore
------------
-
-A `.gitignore` is included to ignore temporary files, OS artifacts, and editor files. If you use other tools (e.g., IntelliJ, VS Code, Eclipse), add their patterns as needed.
-
-Contributing
-------------
-
-- Add slides to `Lecture Slides/`.
-- Add homework to the appropriate `Homework - N/` folder and include a `README.md` with instructions.
-- Keep solutions in a separate `solutions/` folder if you want to share them with staff only.
-
-If you'd like, I can:
-- Rename files for consistent naming (e.g., prefix slides with numbers).
-- Move any stray homework files into `Homework/`.
-- Create `Homework/Homework - N/README.md` templates for each assignment.
-
----
-
-If you want me to perform any moves/renames (for example moving the syllabus into `References/` or deleting the old `lecture slides/` folder after confirming files are copied), tell me which changes and I'll apply them.
+All four homework programs assemble clean under RARS 1.6.
