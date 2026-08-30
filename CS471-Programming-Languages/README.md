@@ -8,8 +8,8 @@ Follows Sebesta.
 ## Layout
 
 `Assignments/`
-Homework 0 through 6, the lexer and parser exercise, the Prolog work, and
-`Project_1`, the OpenMP scaling study.
+Homework 0 through 4 and 6, the lexer and parser exercise, the Prolog work,
+and `Project_1`, the OpenMP scaling study.
 `Assignments/Source-code/` holds the Scheme examples from class.
 
 `In-Class-Assignments/`
